@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-slate-200">
+    <form class="m-9">
+        <div>
+            <input type="text" id="input" class="shadow-inner shadow-2xl rounded-lg placeholder:italic placeholder:text-slate-400" placeholder="Nhập chuỗi số">
+            <button class="ml-2 border-2 border-red-400 w-[100px] rounded-full bg-red-400" onclick="btnDisplay(event)">Enter</button>
+        </div>
+        <div class="grid grid-cols-5" id="container-btn" style="display: none;">
+            <button class="border-2 rounded-full w-[250px] m-3 h-[40px] border-black" onclick="sumPositive(event)">Tổng số dương</button>
+            <button class="border-2 rounded-full w-[250px] m-3 h-[40px] border-black" onclick="countPositive(event)">Đếm số dương</button>
+            <button class="border-2 rounded-full w-[250px] m-3 h-[40px] border-black" onclick="findMin(event)">Tìm số nhỏ nhất</button>
+            <button class="border-2 rounded-full w-[250px] m-3 h-[40px] border-black" onclick="findMinPositive(event)">Tìm số dương nhỏ nhất</button>
+            <button class="border-2 rounded-full w-[250px] m-3 h-[40px] border-black" onclick="findLastPositive(event)">Tìm số chắn cuối cùng</button>
+            <button class="border-2 rounded-full w-[250px] m-3 h-[40px] border-black" onclick="displayNum(event)">Đổi chỗ</button>
+            <button class="border-2 rounded-full w-[250px] m-3 h-[40px] border-black" onclick="sortIncrease(event)">Sắp xếp tăng dần</button>
+            <button class="border-2 rounded-full w-[250px] m-3 h-[40px] border-black" onclick="findFirstPos(event)">Tìm số nguyên tố đầu tiên</button>
+            <button class="border-2 rounded-full w-[250px] m-3 h-[40px] border-black" onclick="countPos(event)">Đếm số nguyên</button>
+            <button class="border-2 rounded-full w-[250px] m-3 h-[40px] border-black" onclick="countPos_Neg(event)">So sánh số lượng số âm và dương</button>
+        </div>
+        <div id="container-num" style="display: none;">
+            <input type="number" id="pos1" class="shadow-inner shadow-2xl rounded-lg placeholder:italic placeholder:text-slate-400" placeholder="Nhập vị trí số thứ nhất">
+            <input type="number" id="pos2" class="shadow-inner shadow-2xl rounded-lg placeholder:italic placeholder:text-slate-400" placeholder="Nhập vị trí số thứ hai">
+            <button class="ml-2 border-2 border-red-400 w-[100px] rounded-full bg-red-400" onclick="swapNum(event)">Đổi chỗ</button>
+        </div>
+        <div id="result" class="bg-[#D1E7DD]">
+
+        </div>
+    </form>
+    <script src="./js/index.js"></script>
+</body>
+</html>
